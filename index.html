@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Revenue Quest RPG</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="app">
+
+  <!-- START -->
+  <div id="start" class="screen active">
+    <h1>💼 Revenue Quest RPG</h1>
+    <p>Rise from Intern to CFO</p>
+    <button onclick="startGame()">Start Career</button>
+  </div>
+
+  <!-- GAME -->
+  <div id="game" class="screen">
+    <div id="hud">
+      <span>💰 Score: <span id="score">0</span></span>
+      <span>❤️ Credibility: <span id="lives">3</span></span>
+      <span>⭐ Reputation: <span id="rep">0</span></span>
+      <span>🏢 Role: <span id="role">Intern</span></span>
+    </div>
+
+    <div class="dialogue">
+      <p id="npc"></p>
+      <h2 id="scenario"></h2>
+    </div>
+
+    <div id="choices"></div>
+    <p id="feedback"></p>
+  </div>
+
+  <!-- END -->
+  <div id="end" class="screen">
+    <h2>🏁 Career Complete</h2>
+    <p id="ending"></p>
+    <button onclick="location.reload()">Restart</button>
+  </div>
+
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>
